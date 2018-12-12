@@ -5,13 +5,8 @@ It uses a Factory design pattern to decide the handler for each message based on
 A report of total products sold with their cost will be printed on console after every 10 sales.
 Adjustment details will be printed after a threshold(50) sales.
 
-We have added a REST endpoint to test the listener and this is a Maven based project.
-Data rest, H2 and other dependencies are added for future enhancements.
-Notification main java file is the Spring Boot application starter file.
-Swagger URL: http://localhost:8080/swagger-ui.html#!/notification45listener/processMessageUsingPOST 
-
 Few test cases are added to test all three different types of sale messages.
-
+NotificationMain java file can also be used to run the application.
 
 # Assumptions #
 
@@ -27,6 +22,7 @@ Few test cases are added to test all three different types of sale messages.
 4. Products can be measured in gallons, dozens and other units. So, we can consider using Strategy design pattern to decide the calculation algorithm.
 5. Reports can be mailed in excel, PDF formats.
 6. We can have daily EOD snapshot of sales done in a relational database. Spring Data rest can be leveraged for implementing the same.
-7. Need more test cases to have good code coverage. SONAR and SSAP tools can be onboaded for code quality checks
+7. Need more test cases to have good code coverage. SONAR and SSAP can be onboaded for code quality checks
+
 
 
